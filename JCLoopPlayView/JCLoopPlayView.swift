@@ -20,6 +20,17 @@ extension JCLoopPlayDelegate {
 // MARK: - 外部事件
 extension JCLoopPlayView {
     
+    /// 设置pageControl的选中/未选中颜色
+    ///
+    /// - Parameters:
+    ///   - pageColor: 所有page的颜色
+    ///   - currentPageColor: 选中page的颜色
+    public func setPageControl(pageColor: UIColor = .white,
+                               currentPageColor: UIColor = .gray) {
+        control.pageIndicatorTintColor = pageColor
+        control.currentPageIndicatorTintColor = currentPageColor
+    }
+    
     /// 开始循环
     public func startLoop(timeInterval: TimeInterval = 2) {
         stopLoop()
@@ -56,13 +67,13 @@ extension JCLoopPlayView: UIScrollViewDelegate {
         if scrollView.contentOffset.x == 0 {
             scrollView.contentOffset.x = CGFloat(imageStrs.count - 2) * bounds.width
             index = imageStrs.count - 2
-            delegate?.currentIndex(index)
+            showPageIndex(index)
         } else {
             let currentOff = lround(Double(scrollView.contentOffset.x / bounds.width))
             let bool = currentOff == imageStrs.count - 1
             index = bool ? 1 : currentOff
             scrollView.contentOffset.x = bool ? bounds.width : CGFloat(currentOff) * bounds.width
-            delegate?.currentIndex(index)
+            showPageIndex(index)
         }
     }
 }
@@ -82,10 +93,10 @@ final public class JCLoopPlayView: UIView {
         UIView.animate(withDuration: 0.2) { [weak self] in
             self?.scrollView.contentOffset.x = CGFloat(self?.index ?? 1) * (self?.bounds.width ?? 1)
         }
-        guard index == imageStrs.count - 1 else { delegate?.currentIndex(index); return }
+        guard index == imageStrs.count - 1 else { showPageIndex(index); return }
         index = 1
         scrollView.contentOffset.x = bounds.width
-        delegate?.currentIndex(index)
+        showPageIndex(index)
     }
     
     /// 当前下表
@@ -121,14 +132,22 @@ final public class JCLoopPlayView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// 显示pageControl的页码
+    internal func showPageIndex(_ index: Int) {
+        delegate?.currentIndex(index)
+        control.currentPage = index - 1
+    }
+    
     // MARK: - 基础设置
     fileprivate func baseConfig() {
-        
+        control.numberOfPages = imageStrs.count - 2
+        setPageControl()
     }
     
     // MARK: - 添加控件
     fileprivate func addSubView() {
         addSubview(scrollView)
+        addSubview(control)
         for i in 0..<imageStrs.count {
             let imageView = UIImageView()
             imageView.frame = CGRect(x: CGFloat(i) * bounds.width,
@@ -149,10 +168,19 @@ final public class JCLoopPlayView: UIView {
         scrollView.contentOffset.x = bounds.width
         scrollView.contentSize = CGSize(width: CGFloat(imageStrs.count) * bounds.width,
                                         height: bounds.height)
+        control.frame = CGRect(x: 0, y: bounds.height - 30, width: bounds.width, height: 30)
     }
     
     // MARK: - 控件加载
     
     /// scrollView加载
     private let scrollView = UIScrollView()
+    
+    /// pageControl
+    private let control: UIPageControl = {
+        let control = UIPageControl()
+        control.isUserInteractionEnabled = false
+        control.backgroundColor = .clear
+        return control
+    }()
 }
