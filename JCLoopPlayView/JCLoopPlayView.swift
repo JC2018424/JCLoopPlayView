@@ -10,11 +10,16 @@ import UIKit
 import Kingfisher
 
 public protocol JCLoopPlayDelegate {
+    
+    /// 当前page下标
     func currentIndex(_ index: Int)
+    /// 选中下标
+    func selectedIndex(_ index: Int)
 }
 
 extension JCLoopPlayDelegate {
     func currentIndex(_ index: Int) { }
+    func selectedIndex(_ index: Int) { }
 }
 
 // MARK: - 外部事件
@@ -25,8 +30,8 @@ extension JCLoopPlayView {
     /// - Parameters:
     ///   - pageColor: 所有page的颜色
     ///   - currentPageColor: 选中page的颜色
-    public func setPageControl(pageColor: UIColor = .white,
-                               currentPageColor: UIColor = .gray) {
+    public func setPageControl(pageColor: UIColor = .lightGray,
+                               currentPageColor: UIColor = .white) {
         control.pageIndicatorTintColor = pageColor
         control.currentPageIndicatorTintColor = currentPageColor
     }
@@ -138,6 +143,11 @@ final public class JCLoopPlayView: UIView {
         control.currentPage = index - 1
     }
     
+    /// 图片点击
+    @objc internal func click(btn: UIButton) {
+        delegate?.selectedIndex(btn.tag - 100)
+    }
+    
     // MARK: - 基础设置
     fileprivate func baseConfig() {
         control.numberOfPages = imageStrs.count - 2
@@ -149,13 +159,20 @@ final public class JCLoopPlayView: UIView {
         addSubview(scrollView)
         addSubview(control)
         for i in 0..<imageStrs.count {
-            let imageView = UIImageView()
-            imageView.frame = CGRect(x: CGFloat(i) * bounds.width,
+            let imageBtn = UIButton()
+            imageBtn.frame = CGRect(x: CGFloat(i) * bounds.width,
                                      y: 0,
                                      width: bounds.width,
                                      height: bounds.height)
-            imageView.image = UIImage(named: imageStrs[i])
-            scrollView.addSubview(imageView)
+            if let img = UIImage(named: imageStrs[i]) {
+                imageBtn.setImage(img, for: .normal)
+            } else if let url = URL(string: imageStrs[i]) {
+                imageBtn.kf.setImage(with: url, for: .normal)
+            }
+            imageBtn.isUserInteractionEnabled = true
+            imageBtn.tag = 100 + i
+            imageBtn.addTarget(self, action: #selector(click), for: .touchUpInside)
+            scrollView.addSubview(imageBtn)
         }
     }
     
