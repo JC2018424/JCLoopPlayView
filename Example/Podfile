@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'JCLoopPlayView' do
+    use_frameworks!
+
+    #图片加载
+    pod 'Kingfisher', '~> 4.7.0'
+
+end

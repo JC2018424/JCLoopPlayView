@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49FD1F7B210F2B93000F76D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD1F7A210F2B93000F76D5 /* AppDelegate.swift */; };
+		49FD1F7D210F2B93000F76D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD1F7C210F2B93000F76D5 /* ViewController.swift */; };
+		49FD1F80210F2B93000F76D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FD1F7E210F2B93000F76D5 /* Main.storyboard */; };
+		49FD1F82210F2B94000F76D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FD1F81210F2B94000F76D5 /* Assets.xcassets */; };
+		49FD1F85210F2B94000F76D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FD1F83210F2B94000F76D5 /* LaunchScreen.storyboard */; };
+		49FD1F90210F2B94000F76D5 /* JCLoopPlayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD1F8F210F2B94000F76D5 /* JCLoopPlayViewTests.swift */; };
+		49FD1F9B210F2B94000F76D5 /* JCLoopPlayViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD1F9A210F2B94000F76D5 /* JCLoopPlayViewUITests.swift */; };
+		49FD1FA9210F2BCC000F76D5 /* JCLoopPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD1FA8210F2BCC000F76D5 /* JCLoopPlayView.swift */; };
+		D7CA5AFE279CEFE0EBD578C3 /* Pods_JCLoopPlayView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDE0867E17E66484E7B2F26 /* Pods_JCLoopPlayView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49FD1F8C210F2B94000F76D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49FD1F6F210F2B93000F76D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FD1F76210F2B93000F76D5;
+			remoteInfo = JCLoopPlayView;
+		};
+		49FD1F97210F2B94000F76D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49FD1F6F210F2B93000F76D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49FD1F76210F2B93000F76D5;
+			remoteInfo = JCLoopPlayView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AA5CA466B0D98F8F9C2B2B4 /* Pods-JCLoopPlayView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCLoopPlayView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCLoopPlayView/Pods-JCLoopPlayView.debug.xcconfig"; sourceTree = "<group>"; };
+		49FD1F77210F2B93000F76D5 /* JCLoopPlayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCLoopPlayView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FD1F7A210F2B93000F76D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49FD1F7C210F2B93000F76D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49FD1F7F210F2B93000F76D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49FD1F81210F2B94000F76D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49FD1F84210F2B94000F76D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49FD1F86210F2B94000F76D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FD1F8B210F2B94000F76D5 /* JCLoopPlayViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCLoopPlayViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FD1F8F210F2B94000F76D5 /* JCLoopPlayViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCLoopPlayViewTests.swift; sourceTree = "<group>"; };
+		49FD1F91210F2B94000F76D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FD1F96210F2B94000F76D5 /* JCLoopPlayViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCLoopPlayViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FD1F9A210F2B94000F76D5 /* JCLoopPlayViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCLoopPlayViewUITests.swift; sourceTree = "<group>"; };
+		49FD1F9C210F2B94000F76D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FD1FA8210F2BCC000F76D5 /* JCLoopPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCLoopPlayView.swift; sourceTree = "<group>"; };
+		6CDE0867E17E66484E7B2F26 /* Pods_JCLoopPlayView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCLoopPlayView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE2492921472E97D429BC2B /* Pods-JCLoopPlayView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCLoopPlayView.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCLoopPlayView/Pods-JCLoopPlayView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49FD1F74210F2B93000F76D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CA5AFE279CEFE0EBD578C3 /* Pods_JCLoopPlayView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FD1F88210F2B94000F76D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FD1F93210F2B94000F76D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D9ED2B9D832AADBA1B1255E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AA5CA466B0D98F8F9C2B2B4 /* Pods-JCLoopPlayView.debug.xcconfig */,
+				BDE2492921472E97D429BC2B /* Pods-JCLoopPlayView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49FD1F6E210F2B93000F76D5 = {
+			isa = PBXGroup;
+			children = (
+				49FD1F79210F2B93000F76D5 /* JCLoopPlayView */,
+				49FD1F8E210F2B94000F76D5 /* JCLoopPlayViewTests */,
+				49FD1F99210F2B94000F76D5 /* JCLoopPlayViewUITests */,
+				49FD1F78210F2B93000F76D5 /* Products */,
+				1D9ED2B9D832AADBA1B1255E /* Pods */,
+				7E601D2564BD74AC98892619 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49FD1F78210F2B93000F76D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FD1F77210F2B93000F76D5 /* JCLoopPlayView.app */,
+				49FD1F8B210F2B94000F76D5 /* JCLoopPlayViewTests.xctest */,
+				49FD1F96210F2B94000F76D5 /* JCLoopPlayViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49FD1F79210F2B93000F76D5 /* JCLoopPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				49FD1F7A210F2B93000F76D5 /* AppDelegate.swift */,
+				49FD1F7C210F2B93000F76D5 /* ViewController.swift */,
+				49FD1FA8210F2BCC000F76D5 /* JCLoopPlayView.swift */,
+				49FD1F7E210F2B93000F76D5 /* Main.storyboard */,
+				49FD1F81210F2B94000F76D5 /* Assets.xcassets */,
+				49FD1F83210F2B94000F76D5 /* LaunchScreen.storyboard */,
+				49FD1F86210F2B94000F76D5 /* Info.plist */,
+			);
+			path = JCLoopPlayView;
+			sourceTree = "<group>";
+		};
+		49FD1F8E210F2B94000F76D5 /* JCLoopPlayViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				49FD1F8F210F2B94000F76D5 /* JCLoopPlayViewTests.swift */,
+				49FD1F91210F2B94000F76D5 /* Info.plist */,
+			);
+			path = JCLoopPlayViewTests;
+			sourceTree = "<group>";
+		};
+		49FD1F99210F2B94000F76D5 /* JCLoopPlayViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49FD1F9A210F2B94000F76D5 /* JCLoopPlayViewUITests.swift */,
+				49FD1F9C210F2B94000F76D5 /* Info.plist */,
+			);
+			path = JCLoopPlayViewUITests;
+			sourceTree = "<group>";
+		};
+		7E601D2564BD74AC98892619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDE0867E17E66484E7B2F26 /* Pods_JCLoopPlayView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49FD1F76210F2B93000F76D5 /* JCLoopPlayView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FD1F9F210F2B94000F76D5 /* Build configuration list for PBXNativeTarget "JCLoopPlayView" */;
+			buildPhases = (
+				48D8572A2C3AD12C4D068768 /* [CP] Check Pods Manifest.lock */,
+				49FD1F73210F2B93000F76D5 /* Sources */,
+				49FD1F74210F2B93000F76D5 /* Frameworks */,
+				49FD1F75210F2B93000F76D5 /* Resources */,
+				17F28999043E319801CB84E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCLoopPlayView;
+			productName = JCLoopPlayView;
+			productReference = 49FD1F77210F2B93000F76D5 /* JCLoopPlayView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49FD1F8A210F2B94000F76D5 /* JCLoopPlayViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FD1FA2210F2B94000F76D5 /* Build configuration list for PBXNativeTarget "JCLoopPlayViewTests" */;
+			buildPhases = (
+				49FD1F87210F2B94000F76D5 /* Sources */,
+				49FD1F88210F2B94000F76D5 /* Frameworks */,
+				49FD1F89210F2B94000F76D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49FD1F8D210F2B94000F76D5 /* PBXTargetDependency */,
+			);
+			name = JCLoopPlayViewTests;
+			productName = JCLoopPlayViewTests;
+			productReference = 49FD1F8B210F2B94000F76D5 /* JCLoopPlayViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49FD1F95210F2B94000F76D5 /* JCLoopPlayViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FD1FA5210F2B94000F76D5 /* Build configuration list for PBXNativeTarget "JCLoopPlayViewUITests" */;
+			buildPhases = (
+				49FD1F92210F2B94000F76D5 /* Sources */,
+				49FD1F93210F2B94000F76D5 /* Frameworks */,
+				49FD1F94210F2B94000F76D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49FD1F98210F2B94000F76D5 /* PBXTargetDependency */,
+			);
+			name = JCLoopPlayViewUITests;
+			productName = JCLoopPlayViewUITests;
+			productReference = 49FD1F96210F2B94000F76D5 /* JCLoopPlayViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49FD1F6F210F2B93000F76D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = jc;
+				TargetAttributes = {
+					49FD1F76210F2B93000F76D5 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					49FD1F8A210F2B94000F76D5 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 49FD1F76210F2B93000F76D5;
+					};
+					49FD1F95210F2B94000F76D5 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 49FD1F76210F2B93000F76D5;
+					};
+				};
+			};
+			buildConfigurationList = 49FD1F72210F2B93000F76D5 /* Build configuration list for PBXProject "JCLoopPlayView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49FD1F6E210F2B93000F76D5;
+			productRefGroup = 49FD1F78210F2B93000F76D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49FD1F76210F2B93000F76D5 /* JCLoopPlayView */,
+				49FD1F8A210F2B94000F76D5 /* JCLoopPlayViewTests */,
+				49FD1F95210F2B94000F76D5 /* JCLoopPlayViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49FD1F75210F2B93000F76D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FD1F85210F2B94000F76D5 /* LaunchScreen.storyboard in Resources */,
+				49FD1F82210F2B94000F76D5 /* Assets.xcassets in Resources */,
+				49FD1F80210F2B93000F76D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FD1F89210F2B94000F76D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FD1F94210F2B94000F76D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17F28999043E319801CB84E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JCLoopPlayView/Pods-JCLoopPlayView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCLoopPlayView/Pods-JCLoopPlayView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48D8572A2C3AD12C4D068768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCLoopPlayView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49FD1F73210F2B93000F76D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FD1F7D210F2B93000F76D5 /* ViewController.swift in Sources */,
+				49FD1F7B210F2B93000F76D5 /* AppDelegate.swift in Sources */,
+				49FD1FA9210F2BCC000F76D5 /* JCLoopPlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FD1F87210F2B94000F76D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FD1F90210F2B94000F76D5 /* JCLoopPlayViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FD1F92210F2B94000F76D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FD1F9B210F2B94000F76D5 /* JCLoopPlayViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49FD1F8D210F2B94000F76D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FD1F76210F2B93000F76D5 /* JCLoopPlayView */;
+			targetProxy = 49FD1F8C210F2B94000F76D5 /* PBXContainerItemProxy */;
+		};
+		49FD1F98210F2B94000F76D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49FD1F76210F2B93000F76D5 /* JCLoopPlayView */;
+			targetProxy = 49FD1F97210F2B94000F76D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49FD1F7E210F2B93000F76D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FD1F7F210F2B93000F76D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49FD1F83210F2B94000F76D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FD1F84210F2B94000F76D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49FD1F9D210F2B94000F76D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49FD1F9E210F2B94000F76D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49FD1FA0210F2B94000F76D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA5CA466B0D98F8F9C2B2B4 /* Pods-JCLoopPlayView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPNWXJHLVK;
+				INFOPLIST_FILE = JCLoopPlayView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcDemo.com.JCLoopPlayView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49FD1FA1210F2B94000F76D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE2492921472E97D429BC2B /* Pods-JCLoopPlayView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPNWXJHLVK;
+				INFOPLIST_FILE = JCLoopPlayView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcDemo.com.JCLoopPlayView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49FD1FA3210F2B94000F76D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPNWXJHLVK;
+				INFOPLIST_FILE = JCLoopPlayViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcDemo.com.JCLoopPlayViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCLoopPlayView.app/JCLoopPlayView";
+			};
+			name = Debug;
+		};
+		49FD1FA4210F2B94000F76D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPNWXJHLVK;
+				INFOPLIST_FILE = JCLoopPlayViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcDemo.com.JCLoopPlayViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCLoopPlayView.app/JCLoopPlayView";
+			};
+			name = Release;
+		};
+		49FD1FA6210F2B94000F76D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPNWXJHLVK;
+				INFOPLIST_FILE = JCLoopPlayViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcDemo.com.JCLoopPlayViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JCLoopPlayView;
+			};
+			name = Debug;
+		};
+		49FD1FA7210F2B94000F76D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPNWXJHLVK;
+				INFOPLIST_FILE = JCLoopPlayViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcDemo.com.JCLoopPlayViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JCLoopPlayView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49FD1F72210F2B93000F76D5 /* Build configuration list for PBXProject "JCLoopPlayView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FD1F9D210F2B94000F76D5 /* Debug */,
+				49FD1F9E210F2B94000F76D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FD1F9F210F2B94000F76D5 /* Build configuration list for PBXNativeTarget "JCLoopPlayView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FD1FA0210F2B94000F76D5 /* Debug */,
+				49FD1FA1210F2B94000F76D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FD1FA2210F2B94000F76D5 /* Build configuration list for PBXNativeTarget "JCLoopPlayViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FD1FA3210F2B94000F76D5 /* Debug */,
+				49FD1FA4210F2B94000F76D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FD1FA5210F2B94000F76D5 /* Build configuration list for PBXNativeTarget "JCLoopPlayViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FD1FA6210F2B94000F76D5 /* Debug */,
+				49FD1FA7210F2B94000F76D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49FD1F6F210F2B93000F76D5 /* Project object */;
+}
