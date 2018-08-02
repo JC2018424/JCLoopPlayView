@@ -15,7 +15,7 @@ view.addSubview(loopView)
 loopView.delegate = self
 
 # 代理方法
-/// 当前轮播的下标
+当前轮播的下标
 func currentIndex(_ index: Int) { }
-/// 选中图片的下标
+选中图片的下标
 func selectedIndex(_ index: Int) { }
