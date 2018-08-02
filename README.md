@@ -27,3 +27,5 @@ func currentIndex(_ index: Int) { }
 选中图片的下标
 
 func selectedIndex(_ index: Int) { }
+
+![image](https://github.com/JC2018424/JCLoopPlayView/blob/master/Example/loop/loop.gif)
