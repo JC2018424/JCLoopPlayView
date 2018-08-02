@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'JCLoopPlayView'
-s.version      = '0.0.3'
+s.version      = '0.0.4'
 s.summary      = '简单实用的无限轮播（暂只支持本地图片）'
 s.homepage     = 'https://github.com/JC2018424/JCLoopPlayView'
 s.license      = 'MIT'
