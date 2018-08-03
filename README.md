@@ -28,4 +28,5 @@ func currentIndex(_ index: Int) { }
 
 func selectedIndex(_ index: Int) { }
 
+# 实例演示
 ![image](https://github.com/JC2018424/JCLoopPlayView/blob/master/Example/loop/vv.gif)
